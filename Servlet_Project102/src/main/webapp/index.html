@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style> 
+h1{ 
+  margin: auto;
+  text-align: center;
+}
+#main{ 
+ display: flex; 
+ width: 90%;
+ height: 90vh;
+ padding: 2%; 
+ background-color: gray;
+ gap: 10%;
+}
+#male{ 
+    width: 45%;
+    border: 1px solid rebeccapurple; 
+
+}
+#female{ 
+    width: 45%;
+    border: 1px solid rebeccapurple;
+}
+</style>
+<body>
+<h1> UFC CHAMPIONS</h1>   
+<div id="main">
+    <div id="male"> 
+    <form action="male"> 
+   
+        <select  name="men" id="maleCategory"> 
+         
+            <option value="weight" > Male Weight Category</option> 
+            <option value="flyweight" > Fly Weight</option>
+            <option value="bantamweight"> Bantam Weight</option>
+            <option value="featherweight"> Feather Weight</option>
+            <option value="lightweight"> Light Weight</option>
+            <option value="welterweight"> Welter Weight</option>
+            <option value="middleweight"> Middle Weight</option>
+            <option value="lightheavyweight"> LightHeavy Weight</option>
+            <option value="heavyweight"> Heavy Weight</option>
+          
+        </select>
+         <input type="submit"> </input>
+         </form>
+    </div>
+    <div id="female"> 
+
+        <select name="women" id="femaleCategory">  
+            <option value="weight"> Female Weight Category</option> 
+            <option value="straw weight"> Straw Weight</option>
+            <option value="fly weight"> Fly Weight</option>
+            <option value="bantam weight"> Bantam Weight</option>
+            <option value="feather weight"> Feather Weight</option>
+        </select>
+        
+      
+    </div>
+    
+</div>
+
+    
+</body>
+</html>
