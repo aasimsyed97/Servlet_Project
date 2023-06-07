@@ -19,12 +19,25 @@ public class AddServlet extends HttpServlet{
 		 int k = i+j;
 		 System.out.println(k); 
 		 
+		 
+		 /* PrintWriter object is used to print something on webpage.
+		  * 
+		  * */
 //		PrintWriter out =  res.getWriter(); 
 //		out.println("Result is :" + k);  
+		 
+		 
 		 req.setAttribute("k", k);
 		
+		 /* RequestDispatcher is used to call other servlet from servlet.
+		  * there are other way also such as Redirect.
+		  * */
 		RequestDispatcher rd = req.getRequestDispatcher("sq"); 
 		rd.forward(req, res);
+		
+		
+		
+		
 		 
 		
 		
